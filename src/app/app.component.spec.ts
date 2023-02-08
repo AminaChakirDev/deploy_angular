@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'soutien_angular_routing'`, () => {
+  it(`should have as title 'deploy_angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('soutien_angular_routing');
+    expect(app.title).toEqual('deploy_angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('soutien_angular_routing app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('deploy_angular app is running!');
   });
 });

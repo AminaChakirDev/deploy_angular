@@ -18,7 +18,6 @@ export class TvShowsListComponent {
   getTvShowsFromService() {
     this.apiService.getTvShows().subscribe((data) => {
       this.tvShows = data.results;
-      console.log(this.tvShows);
     });
   }
 }
